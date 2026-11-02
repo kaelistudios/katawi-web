@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Katawi · Borrar la cuenta</title>
+<!--
+  Versión definitiva. Sin archivos externos: todo está aquí.
+  Se genera con kaeli-tools (kaeli legal --app katawi) a partir de
+  apps/katawi/legal.yaml y templates/legal/: cambia los datos allí y vuelve
+  a generarla (no la edites a mano).
+-->
+<style>
+  :root { --bg: #fdfaf6; --fg: #2b2622; --muted: #6b625a; --card: #ffffff; --line: #e8e0d6; --accent: #CF3A45; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #1d1b1a; --fg: #f1ece6; --muted: #b8afa6; --card: #282523; --line: #3a3532; --accent: #F26B74; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.55 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 640px; margin: 0 auto; padding: 24px 16px 48px; }
+  nav { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 24px; }
+  nav button { border: 1px solid var(--line); background: var(--card); color: var(--fg); border-radius: 999px; padding: 6px 14px; font: inherit; cursor: pointer; }
+  nav button[aria-pressed="true"] { border-color: var(--accent); color: var(--accent); font-weight: 600; }
+  h1 { font-size: 1.6rem; margin: 0 0 8px; }
+  h2 { font-size: 1.1rem; margin: 24px 0 8px; }
+  p, li { color: var(--fg); }
+  .muted { color: var(--muted); }
+  section.card { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 16px 20px; margin-top: 16px; }
+  a { color: var(--accent); }
+  [data-lang] { display: none; }
+  [data-lang].on { display: block; }
+  .updated { color: var(--muted); font-size: .9rem; }
+</style>
+</head>
+<body>
+<main>
+  <nav aria-label="Idioma / Language">
+    <button type="button" data-set="es">Español</button>
+    <button type="button" data-set="en">English</button>
+    <button type="button" data-set="pt">Português</button>
+    <button type="button" data-set="fr">Français</button>
+  </nav>
+
+  <div data-lang="es">
+    <h1>Borrar tu cuenta de Katawi</h1>
+<p class="muted">Katawi, de Kaeli</p>
+<section class="card">
+<h2>Desde la app (lo más rápido)</h2>
+<ol><li>Abre Katawi e inicia sesión.</li><li>Ve a <b>Ajustes → Cuenta y plan → Borrar mi cuenta y mis datos</b>.</li><li>Confirma el borrado.</li></ol>
+</section>
+<section class="card">
+<h2>Sin la app</h2>
+<p>Escríbenos a <a href="mailto:wearekaeli@gmail.com?subject=Borrar%20mi%20cuenta">wearekaeli@gmail.com</a> desde el correo con el que entras a Katawi, con el asunto «Borrar mi cuenta». Te confirmaremos el borrado en un plazo máximo de 30 días.</p>
+</section>
+<section class="card">
+<h2>Qué se borra</h2>
+<ul><li>Tu cuenta y tu perfil.</li><li>Todo tu espacio: marcas, campañas, clientas, pedidos, ventas, abonos, devoluciones, comisiones, tarjetas de regalo, préstamos, envíos, compras e importaciones, inventario y metas.</li></ul>
+<h2>Qué se conserva</h2>
+<ul><li>Nada más. Las copias de seguridad de la base de datos se eliminan solas en un máximo de 7 días.</li></ul>
+<p class="muted">Si pagaste Pro, borrar la cuenta no cancela la suscripción: cancélala en Google Play (Pagos y suscripciones) o en los ajustes de tu iPhone.</p>
+</section>
+  </div>
+
+  <div data-lang="en">
+    <h1>Delete your Katawi account</h1>
+<p class="muted">Katawi, by Kaeli</p>
+<section class="card">
+<h2>From the app (fastest)</h2>
+<ol><li>Open Katawi and sign in.</li><li>Go to <b>Settings → Account and plan → Delete my account and data</b>.</li><li>Confirm the deletion.</li></ol>
+</section>
+<section class="card">
+<h2>Without the app</h2>
+<p>Email us at <a href="mailto:wearekaeli@gmail.com?subject=Delete%20my%20account">wearekaeli@gmail.com</a> from the address you use to sign in to Katawi, with the subject “Delete my account”. We will confirm the deletion within 30 days at most.</p>
+</section>
+<section class="card">
+<h2>What is deleted</h2>
+<ul><li>Your account and your profile.</li><li>Your whole space: brands, campaigns, clients, orders, sales, payments, returns, commissions, gift cards, loans, shipments, purchases and imports, inventory and goals.</li></ul>
+<h2>What is kept</h2>
+<ul><li>Nothing else. Database backups are deleted automatically within 7 days at most.</li></ul>
+<p class="muted">If you paid for Pro, deleting your account does not cancel the subscription: cancel it in Google Play (Payments &amp; subscriptions) or in your iPhone settings.</p>
+</section>
+  </div>
+
+  <div data-lang="pt">
+    <h1>Excluir sua conta do Katawi</h1>
+<p class="muted">Katawi, da Kaeli</p>
+<section class="card">
+<h2>Pelo app (mais rápido)</h2>
+<ol><li>Abra o Katawi e entre na sua conta.</li><li>Vá em <b>Ajustes → Conta e plano → Excluir minha conta e meus dados</b>.</li><li>Confirme a exclusão.</li></ol>
+</section>
+<section class="card">
+<h2>Sem o app</h2>
+<p>Escreva para <a href="mailto:wearekaeli@gmail.com?subject=Excluir%20minha%20conta">wearekaeli@gmail.com</a> a partir do e-mail que você usa no Katawi, com o assunto “Excluir minha conta”. Confirmaremos a exclusão em até 30 dias.</p>
+</section>
+<section class="card">
+<h2>O que é excluído</h2>
+<ul><li>Sua conta e seu perfil.</li><li>Todo o seu espaço: marcas, campanhas, clientes, pedidos, vendas, pagamentos, devoluções, comissões, cartões-presente, empréstimos, envios, compras e importações, estoque e metas.</li></ul>
+<h2>O que é mantido</h2>
+<ul><li>Nada mais. As cópias de segurança do banco de dados são apagadas automaticamente em no máximo 7 dias.</li></ul>
+<p class="muted">Se você pagou o Pro, excluir a conta não cancela a assinatura: cancele no Google Play (Pagamentos e assinaturas) ou nos ajustes do iPhone.</p>
+</section>
+  </div>
+
+  <div data-lang="fr">
+    <h1>Supprimer votre compte Katawi</h1>
+<p class="muted">Katawi, par Kaeli</p>
+<section class="card">
+<h2>Depuis l’application (le plus rapide)</h2>
+<ol><li>Ouvrez Katawi et connectez-vous.</li><li>Allez dans <b>Réglages → Compte et abonnement → Supprimer mon compte et mes données</b>.</li><li>Confirmez la suppression.</li></ol>
+</section>
+<section class="card">
+<h2>Sans l’application</h2>
+<p>Écrivez-nous à <a href="mailto:wearekaeli@gmail.com?subject=Supprimer%20mon%20compte">wearekaeli@gmail.com</a> depuis l’adresse que vous utilisez pour Katawi, avec l’objet « Supprimer mon compte ». Nous confirmerons la suppression sous 30 jours maximum.</p>
+</section>
+<section class="card">
+<h2>Ce qui est supprimé</h2>
+<ul><li>Votre compte et votre profil.</li><li>Tout votre espace : marques, campagnes, clientes, commandes, ventes, paiements, retours, commissions, cartes-cadeaux, prêts, envois, achats et importations, stock et objectifs.</li></ul>
+<h2>Ce qui est conservé</h2>
+<ul><li>Rien d’autre. Les sauvegardes de la base de données sont supprimées automatiquement en 7 jours au maximum.</li></ul>
+<p class="muted">Si vous avez payé Pro, supprimer votre compte n’annule pas l’abonnement : annulez-le dans Google Play (Paiements et abonnements) ou dans les réglages de votre iPhone.</p>
+</section>
+  </div>
+</main>
+<script>
+  (function () {
+    var langs = ['es', 'en', 'pt', 'fr'];
+    var titles = { es: "Katawi · Borrar la cuenta", en: "Katawi · Delete account", pt: "Katawi · Excluir a conta", fr: "Katawi · Supprimer le compte" };
+    function show(lang) {
+      document.documentElement.lang = lang;
+      document.title = titles[lang];
+      document.querySelectorAll('[data-lang]').forEach(function (el) { el.classList.toggle('on', el.dataset.lang === lang); });
+      document.querySelectorAll('[data-set]').forEach(function (b) { b.setAttribute('aria-pressed', String(b.dataset.set === lang)); });
+    }
+    var asked = new URLSearchParams(location.search).get('lang');
+    var browser = (navigator.language || 'es').slice(0, 2).toLowerCase();
+    show(langs.indexOf(asked) >= 0 ? asked : langs.indexOf(browser) >= 0 ? browser : 'es');
+    document.querySelectorAll('[data-set]').forEach(function (b) { b.addEventListener('click', function () { show(b.dataset.set); }); });
+  })();
+</script>
+</body>
+</html>

@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política de privacidad de Katawi</title>
+<!--
+  Versión definitiva. Sin archivos externos: todo está aquí.
+  Se genera con kaeli-tools (kaeli legal --app katawi) a partir de
+  apps/katawi/legal.yaml y templates/legal/: cambia los datos allí y vuelve
+  a generarla (no la edites a mano).
+-->
+<style>
+  :root { --bg: #fdfaf6; --fg: #2b2622; --muted: #6b625a; --card: #ffffff; --line: #e8e0d6; --accent: #CF3A45; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #1d1b1a; --fg: #f1ece6; --muted: #b8afa6; --card: #282523; --line: #3a3532; --accent: #F26B74; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.55 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 640px; margin: 0 auto; padding: 24px 16px 48px; }
+  nav { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 24px; }
+  nav button { border: 1px solid var(--line); background: var(--card); color: var(--fg); border-radius: 999px; padding: 6px 14px; font: inherit; cursor: pointer; }
+  nav button[aria-pressed="true"] { border-color: var(--accent); color: var(--accent); font-weight: 600; }
+  h1 { font-size: 1.6rem; margin: 0 0 8px; }
+  h2 { font-size: 1.1rem; margin: 24px 0 8px; }
+  p, li { color: var(--fg); }
+  .muted { color: var(--muted); }
+  section.card { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 16px 20px; margin-top: 16px; }
+  a { color: var(--accent); }
+  [data-lang] { display: none; }
+  [data-lang].on { display: block; }
+  .updated { color: var(--muted); font-size: .9rem; }
+</style>
+</head>
+<body>
+<main>
+  <nav aria-label="Idioma / Language">
+    <button type="button" data-set="es">Español</button>
+    <button type="button" data-set="en">English</button>
+    <button type="button" data-set="pt">Português</button>
+    <button type="button" data-set="fr">Français</button>
+  </nav>
+
+  <div data-lang="es">
+    <h1>Política de privacidad de Katawi</h1>
+    <p class="updated">Última actualización: 2 de noviembre de 2026</p>
+<p>Katawi es una app para organizar la venta por catálogo o venta directa (clientas, pedidos por campaña, cobros, envíos y ganancias). La ofrece Kaeli ("nosotros"). Esta política explica qué datos guarda la app, dónde, para qué y cómo puedes borrarlos. Si tienes preguntas, escríbenos a <a href="mailto:wearekaeli@gmail.com">wearekaeli@gmail.com</a>.</p>
+<h2>Resumen</h2>
+<ul><li>Los datos se guardan en servidores de Google Firebase en Estados Unidos.</li><li>Si usas «Leer foto», la foto se envía a un proveedor de inteligencia artificial (Anthropic) para proponer los datos; tú los revisas antes de guardar.</li><li>No vendemos tus datos, no mostramos publicidad y no usamos herramientas de publicidad ni de seguimiento.</li><li>Puedes borrar tu cuenta y tus datos desde la app o pidiéndolo en <a href="https://katawi.kaeliapps.com/borrar-cuenta">https://katawi.kaeliapps.com/borrar-cuenta</a>.</li></ul>
+<h2>Qué datos guardamos</h2>
+<ul><li><b>Cuenta:</b> tu correo, tu nombre si lo das, la forma de entrar (correo, Google o Apple) y tus preferencias (idioma, moneda, unidad de peso, tema).</li><li><b>Tu negocio:</b> lo que anotas en la app — marcas, campañas, clientas (nombre, teléfono, cumpleaños, notas y preferencias), pedidos, ventas, abonos, devoluciones, comisiones, tarjetas de regalo, préstamos, envíos, compras e importaciones (costos, tipo de cambio, incidentes y reclamos), inventario y metas. Tú decides qué anotas de cada clienta.</li><li><b>Contactos:</b> solo si usas «Importar de mis contactos» y das el permiso, la app lee tu agenda en el teléfono y guarda únicamente el nombre, el teléfono y el cumpleaños de las personas que eliges. El resto de tu agenda no se copia ni se sube.</li></ul>
+<h2>Para qué los usamos</h2>
+<ul><li>mostrarte tu información en tus teléfonos, sincronizarla y guardarla de forma segura</li><li>enviarte los recordatorios que actives (cierres de campaña, cobros, cumpleaños) y avisos de Kaeli</li><li>gestionar tu prueba gratis y tu suscripción, y corregir errores de la app</li></ul>
+<p>No usamos tus datos para publicidad ni para crear perfiles, y no los vendemos.</p>
+<h2>Leer datos de una foto</h2>
+<p>Con la suscripción Pro puedes tomar una foto o captura de una orden de la marca, una factura del casillero o un comprobante de pago para que la app proponga los datos. La foto pasa por nuestro servidor y se envía a Anthropic (el proveedor del modelo Claude) junto con el tipo de documento, la fecha de hoy, tu moneda y tu país. Esos documentos pueden incluir nombres, direcciones o números de pedido de otras personas. Anthropic procesa la foto solo para darnos el resultado, como proveedor nuestro. Según sus <a href="https://www.anthropic.com/legal/commercial-terms">condiciones comerciales</a> y su <a href="https://privacy.claude.com/en/articles/7996866-how-long-do-you-store-my-organization-s-data">centro de privacidad</a>, no usa estos datos para entrenar sus modelos y los conserva solo por un tiempo limitado. Katawi no guarda la foto: el resultado es una propuesta y nada se guarda sin que lo confirmes.</p>
+<h2>Dónde se guardan</h2>
+<p>Tus datos (clientas, pedidos, cobros, envíos) se guardan en Cloud Firestore, en la región de Estados Unidos, y una copia en tu teléfono para que la app funcione sin internet. Si vives fuera de Estados Unidos, tus datos se transfieren allí. Google, RevenueCat, Anthropic y Resend actúan como proveedores que tratan los datos por encargo nuestro.</p>
+<p>Estos son nuestros proveedores, para qué los usamos y dónde tratan los datos:</p>
+<ul><li><b>Google</b> (Firebase / Google Cloud): cuentas, base de datos, funciones del servidor, avisos e informes de errores. País: Estados Unidos.</li><li><b>RevenueCat</b>: gestionar las suscripciones. País: Estados Unidos.</li><li><b>Anthropic</b> (Claude): leer las fotos de órdenes, facturas y comprobantes y proponer los datos (Pro). País: Estados Unidos.</li><li><b>Resend</b>: enviar los correos de la cuenta (verificación y cambio de contraseña). País: Estados Unidos.</li></ul>
+<h2>Cuánto tiempo los guardamos</h2>
+<ul><li>Mientras tengas tu cuenta.</li><li>Las copias de seguridad de la base de datos se conservan como máximo 7 días.</li><li>Al borrar tu cuenta se borran tu perfil y todo tu espacio (marcas, campañas, clientas, pedidos, ventas, abonos, devoluciones, comisiones, tarjetas de regalo, préstamos, envíos, compras e importaciones, inventario y metas).</li></ul>
+<h2>Seguridad</h2>
+<p>Todas las comunicaciones van cifradas (HTTPS).</p>
+<h2>Menores de edad</h2>
+<p>Katawi está pensada para personas adultas que venden productos por catálogo o venta directa. No está dirigida a menores de 18 años y no les pedimos que creen una cuenta. Si crees que un menor de 18 años creó una cuenta, escríbenos y la borraremos.</p>
+<h2>Tus derechos</h2>
+<p>Puedes ver y corregir tus datos en la app, y borrar tu cuenta en Ajustes → Cuenta y plan → Borrar mi cuenta y mis datos, o pidiéndolo en <a href="https://katawi.kaeliapps.com/borrar-cuenta">https://katawi.kaeliapps.com/borrar-cuenta</a>. También puedes escribirnos a <a href="mailto:wearekaeli@gmail.com">wearekaeli@gmail.com</a> para pedir una copia de tus datos u oponerte a algún uso. Según tu país (por ejemplo, la Unión Europea o Brasil) puedes tener otros derechos y reclamar ante la autoridad de protección de datos.</p>
+<h2>Cambios</h2>
+<p>Si cambiamos esta política, actualizaremos la fecha de arriba y, si el cambio es importante, te avisaremos en la app.</p>
+<h2>Contacto</h2>
+<p>Kaeli — <a href="mailto:wearekaeli@gmail.com">wearekaeli@gmail.com</a> · Titular: Dinia Susana Campos Vargas (Kaeli), Chachagua, Peñas Blancas, San Ramón, Alajuela, 20213, Costa Rica.</p>
+  </div>
+
+  <div data-lang="en">
+    <h1>Katawi Privacy Policy</h1>
+    <p class="updated">Last updated: November 2, 2026</p>
+<p>Katawi is an app to organizing catalog and direct sales (clients, orders by campaign, payments, shipments and profit). It is provided by Kaeli ("we"). This policy explains what data the app stores, where, why, and how you can delete it. If you have questions, email us at <a href="mailto:wearekaeli@gmail.com">wearekaeli@gmail.com</a>.</p>
+<h2>Summary</h2>
+<ul><li>Data is stored on Google Firebase servers in the United States.</li><li>If you use “Read photo”, the photo is sent to an artificial intelligence provider (Anthropic) to suggest the details; you review them before saving.</li><li>We don't sell your data, we don't show ads and we don't use advertising or tracking tools.</li><li>You can delete your account and your data from the app or by requesting it at <a href="https://katawi.kaeliapps.com/borrar-cuenta">https://katawi.kaeliapps.com/borrar-cuenta</a>.</li></ul>
+<h2>What data we store</h2>
+<ul><li><b>Account:</b> your email, your name if you provide it, how you sign in (email, Google or Apple) and your preferences (language, currency, weight unit, theme).</li><li><b>Your business:</b> what you enter in the app — brands, campaigns, clients (name, phone, birthday, notes and preferences), orders, sales, payments, returns, commissions, gift cards, loans, shipments, purchases and imports (costs, exchange rate, incidents and claims), inventory and goals. You decide what you record about each client.</li><li><b>Contacts:</b> only if you use “Import from my contacts” and grant permission, the app reads your address book on the phone and saves only the name, phone and birthday of the people you choose. The rest of your address book is never copied or uploaded.</li></ul>
+<h2>Why we use it</h2>
+<ul><li>showing you your information on your phones, syncing it and keeping it safe</li><li>sending you the reminders you turn on (campaign closings, payments, birthdays) and notices from Kaeli</li><li>managing your free trial and subscription, and fixing app errors</li></ul>
+<p>We don't use your data for advertising or profiling, and we don't sell it.</p>
+<h2>Reading details from a photo</h2>
+<p>With the Pro subscription you can take a photo or screenshot of a brand order, a parcel-forwarder invoice or a payment receipt so the app can suggest the details. The photo goes through our server and is sent to Anthropic (the provider of the Claude model) together with the document type, today's date, your currency and your country. These documents may include names, addresses or order numbers of other people. Anthropic processes the photo only to return the result to us, as our provider. Under its <a href="https://www.anthropic.com/legal/commercial-terms">commercial terms</a> and its <a href="https://privacy.claude.com/en/articles/7996866-how-long-do-you-store-my-organization-s-data">privacy center</a>, it does not use this data to train its models and keeps it only for a limited time. Katawi does not keep the photo: the result is a suggestion and nothing is saved unless you confirm it.</p>
+<h2>Where it is stored</h2>
+<p>Your data (clients, orders, payments, shipments) is stored in Cloud Firestore, in the United States region, with a copy on your phone so the app works offline. If you live outside the United States, your data is transferred there. Google, RevenueCat, Anthropic and Resend act as providers processing data on our behalf.</p>
+<p>These are our providers, what we use them for and where they process data:</p>
+<ul><li><b>Google</b> (Firebase / Google Cloud): accounts, database, server functions, notifications and crash reports. Country: United States.</li><li><b>RevenueCat</b>: managing subscriptions. Country: United States.</li><li><b>Anthropic</b> (Claude): reading photos of orders, invoices and receipts and suggesting the details (Pro). Country: United States.</li><li><b>Resend</b>: sending account emails (verification and password reset). Country: United States.</li></ul>
+<h2>How long we keep it</h2>
+<ul><li>As long as you have your account.</li><li>Database backups are kept for at most 7 days.</li><li>When you delete your account, your profile and your whole space (brands, campaigns, clients, orders, sales, payments, returns, commissions, gift cards, loans, shipments, purchases and imports, inventory and goals) are deleted.</li></ul>
+<h2>Security</h2>
+<p>All communications are encrypted (HTTPS).</p>
+<h2>Children</h2>
+<p>Katawi is designed for adults who sell products through catalogs or direct sales. It is not directed to children under 18 and we don't ask them to create an account. If you believe a child under 18 created an account, contact us and we will delete it.</p>
+<h2>Your rights</h2>
+<p>You can see and correct your data in the app, and delete your account in Settings → Account and plan → Delete my account and data, or by requesting it at <a href="https://katawi.kaeliapps.com/borrar-cuenta">https://katawi.kaeliapps.com/borrar-cuenta</a>. You can also email <a href="mailto:wearekaeli@gmail.com">wearekaeli@gmail.com</a> to request a copy of your data or object to a use. Depending on your country (for example, the European Union or Brazil) you may have other rights and may complain to your data protection authority.</p>
+<h2>Changes</h2>
+<p>If we change this policy, we will update the date above and, if the change is significant, let you know in the app.</p>
+<h2>Contact</h2>
+<p>Kaeli — <a href="mailto:wearekaeli@gmail.com">wearekaeli@gmail.com</a> · Owner: Dinia Susana Campos Vargas (Kaeli), Chachagua, Peñas Blancas, San Ramón, Alajuela, 20213, Costa Rica.</p>
+  </div>
+
+  <div data-lang="pt">
+    <h1>Política de privacidade do Katawi</h1>
+    <p class="updated">Última atualização: 2 de novembro de 2026</p>
+<p>O Katawi é um app para organizar a venda por catálogo ou venda direta (clientes, pedidos por campanha, cobranças, envios e lucros). Ele é oferecido pela Kaeli ("nós"). Esta política explica quais dados o app guarda, onde, para quê e como você pode apagá-los. Se tiver dúvidas, escreva para <a href="mailto:wearekaeli@gmail.com">wearekaeli@gmail.com</a>.</p>
+<h2>Resumo</h2>
+<ul><li>Os dados ficam em servidores do Google Firebase nos Estados Unidos.</li><li>Se você usar «Ler foto», a foto é enviada a um provedor de inteligência artificial (Anthropic) para sugerir os dados; você os revisa antes de salvar.</li><li>Não vendemos seus dados, não mostramos anúncios e não usamos ferramentas de publicidade nem de rastreamento.</li><li>Você pode excluir sua conta e seus dados pelo app ou pedindo em <a href="https://katawi.kaeliapps.com/borrar-cuenta">https://katawi.kaeliapps.com/borrar-cuenta</a>.</li></ul>
+<h2>Quais dados guardamos</h2>
+<ul><li><b>Conta:</b> seu e-mail, seu nome se você informar, a forma de entrar (e-mail, Google ou Apple) e suas preferências (idioma, moeda, unidade de peso, tema).</li><li><b>Seu negócio:</b> o que você anota no app — marcas, campanhas, clientes (nome, telefone, aniversário, notas e preferências), pedidos, vendas, pagamentos, devoluções, comissões, cartões-presente, empréstimos, envios, compras e importações (custos, câmbio, incidentes e reclamações), estoque e metas. Você decide o que anota de cada cliente.</li><li><b>Contatos:</b> só se você usar «Importar dos meus contatos» e der a permissão, o app lê sua agenda no telefone e salva apenas o nome, o telefone e o aniversário das pessoas que você escolher. O resto da sua agenda não é copiado nem enviado.</li></ul>
+<h2>Para que usamos</h2>
+<ul><li>mostrar suas informações nos seus telefones, sincronizá-las e guardá-las com segurança</li><li>enviar os lembretes que você ativar (fechamentos de campanha, cobranças, aniversários) e avisos da Kaeli</li><li>gerenciar seu teste grátis e sua assinatura, e corrigir erros do app</li></ul>
+<p>Não usamos seus dados para publicidade nem para criar perfis, e não os vendemos.</p>
+<h2>Ler dados de uma foto</h2>
+<p>Com a assinatura Pro você pode tirar uma foto ou print de um pedido da marca, uma fatura do redirecionador ou um comprovante de pagamento para que o app sugira os dados. A foto passa pelo nosso servidor e é enviada à Anthropic (provedora do modelo Claude) junto com o tipo de documento, a data de hoje, sua moeda e seu país. Esses documentos podem incluir nomes, endereços ou números de pedido de outras pessoas. A Anthropic processa a foto apenas para nos devolver o resultado, como nossa provedora. Conforme seus <a href="https://www.anthropic.com/legal/commercial-terms">termos comerciais</a> e sua <a href="https://privacy.claude.com/en/articles/7996866-how-long-do-you-store-my-organization-s-data">central de privacidade</a>, não usa esses dados para treinar seus modelos e os guarda apenas por um tempo limitado. O Katawi não guarda a foto: o resultado é uma sugestão e nada é salvo sem a sua confirmação.</p>
+<h2>Onde ficam</h2>
+<p>Seus dados (clientes, pedidos, cobranças, envios) ficam no Cloud Firestore, na região dos Estados Unidos, com uma cópia no seu telefone para que o app funcione sem internet. Se você mora fora dos Estados Unidos, seus dados são transferidos para lá. Google, RevenueCat, Anthropic e Resend atuam como provedores que tratam os dados em nosso nome.</p>
+<p>Estes são nossos provedores, para que os usamos e onde tratam os dados:</p>
+<ul><li><b>Google</b> (Firebase / Google Cloud): contas, banco de dados, funções do servidor, avisos e relatórios de erros. País: Estados Unidos.</li><li><b>RevenueCat</b>: gerenciar as assinaturas. País: Estados Unidos.</li><li><b>Anthropic</b> (Claude): ler as fotos de pedidos, faturas e comprovantes e sugerir os dados (Pro). País: Estados Unidos.</li><li><b>Resend</b>: enviar os e-mails da conta (verificação e troca de senha). País: Estados Unidos.</li></ul>
+<h2>Por quanto tempo guardamos</h2>
+<ul><li>Enquanto você tiver sua conta.</li><li>As cópias de segurança do banco de dados são mantidas por no máximo 7 dias.</li><li>Ao excluir sua conta, seu perfil e todo o seu espaço (marcas, campanhas, clientes, pedidos, vendas, pagamentos, devoluções, comissões, cartões-presente, empréstimos, envios, compras e importações, estoque e metas) são excluídos.</li></ul>
+<h2>Segurança</h2>
+<p>Todas as comunicações são criptografadas (HTTPS).</p>
+<h2>Menores de idade</h2>
+<p>O Katawi foi pensado para pessoas adultas que vendem produtos por catálogo ou venda direta. Não é direcionado a menores de 18 anos e não pedimos que eles criem uma conta. Se você acredita que um menor de 18 anos criou uma conta, escreva para nós e a excluiremos.</p>
+<h2>Seus direitos</h2>
+<p>Você pode ver e corrigir seus dados no app, e excluir sua conta em Ajustes → Conta e plano → Excluir minha conta e meus dados, ou pedindo em <a href="https://katawi.kaeliapps.com/borrar-cuenta">https://katawi.kaeliapps.com/borrar-cuenta</a>. Também pode escrever para <a href="mailto:wearekaeli@gmail.com">wearekaeli@gmail.com</a> para pedir uma cópia dos seus dados ou se opor a algum uso. Conforme o seu país (por exemplo, a LGPD no Brasil ou o RGPD na União Europeia), você pode ter outros direitos e reclamar à autoridade de proteção de dados.</p>
+<h2>Alterações</h2>
+<p>Se mudarmos esta política, atualizaremos a data acima e, se a mudança for importante, avisaremos no app.</p>
+<h2>Contato</h2>
+<p>Kaeli — <a href="mailto:wearekaeli@gmail.com">wearekaeli@gmail.com</a> · Titular: Dinia Susana Campos Vargas (Kaeli), Chachagua, Peñas Blancas, San Ramón, Alajuela, 20213, Costa Rica.</p>
+  </div>
+
+  <div data-lang="fr">
+    <h1>Politique de confidentialité de Katawi</h1>
+    <p class="updated">Dernière mise à jour : 2 novembre 2026</p>
+<p>Katawi est une app pour organiser la vente sur catalogue ou la vente directe (clientes, commandes par campagne, paiements, envois et bénéfices). Elle est proposée par Kaeli (« nous »). Cette politique explique quelles données l’app conserve, où, pourquoi et comment les supprimer. Pour toute question, écrivez-nous à <a href="mailto:wearekaeli@gmail.com">wearekaeli@gmail.com</a>.</p>
+<h2>En bref</h2>
+<ul><li>Les données sont hébergées sur les serveurs de Google Firebase aux États-Unis.</li><li>Si vous utilisez « Lire une photo », la photo est envoyée à un fournisseur d’intelligence artificielle (Anthropic) pour proposer les données ; vous les vérifiez avant d’enregistrer.</li><li>Nous ne vendons pas vos données, n’affichons pas de publicité et n’utilisons aucun outil publicitaire ni de suivi.</li><li>Vous pouvez supprimer votre compte et vos données depuis l’app ou en le demandant sur <a href="https://katawi.kaeliapps.com/borrar-cuenta">https://katawi.kaeliapps.com/borrar-cuenta</a>.</li></ul>
+<h2>Quelles données nous conservons</h2>
+<ul><li><b>Compte :</b> votre e-mail, votre nom si vous le donnez, votre mode de connexion (e-mail, Google ou Apple) et vos préférences (langue, devise, unité de poids, thème).</li><li><b>Votre activité :</b> ce que vous saisissez dans l'app — marques, campagnes, clientes (nom, téléphone, anniversaire, notes et préférences), commandes, ventes, paiements, retours, commissions, cartes-cadeaux, prêts, envois, achats et importations (coûts, taux de change, incidents et réclamations), stock et objectifs. Vous décidez de ce que vous notez sur chaque cliente.</li><li><b>Contacts :</b> uniquement si vous utilisez « Importer depuis mes contacts » et donnez l'autorisation, l'app lit votre carnet sur le téléphone et n'enregistre que le nom, le téléphone et l'anniversaire des personnes choisies. Le reste de votre carnet n'est ni copié ni envoyé.</li></ul>
+<h2>Pourquoi nous les utilisons</h2>
+<ul><li>vous montrer vos informations sur vos téléphones, les synchroniser et les conserver en sécurité</li><li>vous envoyer les rappels que vous activez (clôtures de campagne, paiements, anniversaires) et les annonces de Kaeli</li><li>gérer votre essai gratuit et votre abonnement, et corriger les erreurs de l'app</li></ul>
+<p>Nous n’utilisons pas vos données à des fins publicitaires ni de profilage, et nous ne les vendons pas.</p>
+<h2>Lire les données d’une photo</h2>
+<p>Avec l’abonnement Pro, vous pouvez prendre une photo ou une capture d’une commande de la marque, d’une facture du transitaire ou d’un justificatif de paiement pour que l’app propose les données. La photo passe par notre serveur et est envoyée à Anthropic (fournisseur du modèle Claude) avec le type de document, la date du jour, votre devise et votre pays. Ces documents peuvent contenir des noms, adresses ou numéros de commande d’autres personnes. Anthropic traite la photo uniquement pour nous renvoyer le résultat, en tant que prestataire. Selon ses <a href="https://www.anthropic.com/legal/commercial-terms">conditions commerciales</a> et son <a href="https://privacy.claude.com/en/articles/7996866-how-long-do-you-store-my-organization-s-data">centre de confidentialité</a>, il n’utilise pas ces données pour entraîner ses modèles et ne les conserve que pendant une durée limitée. Katawi ne garde pas la photo : le résultat est une proposition et rien n’est enregistré sans votre confirmation.</p>
+<h2>Où elles sont hébergées</h2>
+<p>Vos données (clientes, commandes, paiements, envois) sont stockées dans Cloud Firestore, dans la région des États-Unis, avec une copie sur votre téléphone pour que l'app fonctionne hors connexion. Si vous vivez hors des États-Unis, vos données y sont transférées. Google, RevenueCat, Anthropic et Resend agissent en tant que prestataires traitant les données pour notre compte.</p>
+<p>Voici nos prestataires, ce pour quoi nous les utilisons et où ils traitent les données :</p>
+<ul><li><b>Google</b> (Firebase / Google Cloud) : comptes, base de données, fonctions serveur, notifications et rapports d'erreurs. Pays : États-Unis.</li><li><b>RevenueCat</b> : gérer les abonnements. Pays : États-Unis.</li><li><b>Anthropic</b> (Claude) : lire les photos de commandes, factures et justificatifs et proposer les données (Pro). Pays : États-Unis.</li><li><b>Resend</b> : envoyer les e-mails du compte (vérification et changement de mot de passe). Pays : États-Unis.</li></ul>
+<h2>Combien de temps nous les conservons</h2>
+<ul><li>Tant que vous avez votre compte.</li><li>Les sauvegardes de la base de données sont conservées 7 jours au maximum.</li><li>Quand vous supprimez votre compte, votre profil et tout votre espace (marques, campagnes, clientes, commandes, ventes, paiements, retours, commissions, cartes-cadeaux, prêts, envois, achats et importations, stock et objectifs) sont supprimés.</li></ul>
+<h2>Sécurité</h2>
+<p>Toutes les communications sont chiffrées (HTTPS).</p>
+<h2>Mineurs</h2>
+<p>Katawi est conçue pour des adultes qui vendent des produits sur catalogue ou en vente directe. Elle ne s’adresse pas aux enfants de moins de 18 ans et nous ne leur demandons pas de créer un compte. Si vous pensez qu’un enfant de moins de 18 ans a créé un compte, écrivez-nous et nous le supprimerons.</p>
+<h2>Vos droits</h2>
+<p>Vous pouvez consulter et corriger vos données dans l’app, et supprimer votre compte dans Réglages → Compte et abonnement → Supprimer mon compte et mes données, ou en le demandant sur <a href="https://katawi.kaeliapps.com/borrar-cuenta">https://katawi.kaeliapps.com/borrar-cuenta</a>. Vous pouvez aussi écrire à <a href="mailto:wearekaeli@gmail.com">wearekaeli@gmail.com</a> pour obtenir une copie de vos données ou vous opposer à un usage. Selon votre pays (par exemple le RGPD dans l’Union européenne), vous pouvez avoir d’autres droits et saisir l’autorité de protection des données (en France, la CNIL).</p>
+<h2>Modifications</h2>
+<p>Si nous modifions cette politique, nous mettrons à jour la date ci-dessus et, en cas de changement important, nous vous préviendrons dans l’app.</p>
+<h2>Contact</h2>
+<p>Kaeli — <a href="mailto:wearekaeli@gmail.com">wearekaeli@gmail.com</a> · Titulaire : Dinia Susana Campos Vargas (Kaeli), Chachagua, Peñas Blancas, San Ramón, Alajuela, 20213, Costa Rica.</p>
+  </div>
+</main>
+<script>
+  (function () {
+    var langs = ['es', 'en', 'pt', 'fr'];
+    var titles = { es: "Política de privacidad de Katawi", en: "Katawi Privacy Policy", pt: "Política de privacidade do Katawi", fr: "Politique de confidentialité de Katawi" };
+    function show(lang) {
+      document.documentElement.lang = lang;
+      document.title = titles[lang];
+      document.querySelectorAll('[data-lang]').forEach(function (el) { el.classList.toggle('on', el.dataset.lang === lang); });
+      document.querySelectorAll('[data-set]').forEach(function (b) { b.setAttribute('aria-pressed', String(b.dataset.set === lang)); });
+    }
+    var asked = new URLSearchParams(location.search).get('lang');
+    var browser = (navigator.language || 'es').slice(0, 2).toLowerCase();
+    show(langs.indexOf(asked) >= 0 ? asked : langs.indexOf(browser) >= 0 ? browser : 'es');
+    document.querySelectorAll('[data-set]').forEach(function (b) { b.addEventListener('click', function () { show(b.dataset.set); }); });
+  })();
+</script>
+</body>
+</html>
